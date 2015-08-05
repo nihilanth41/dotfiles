@@ -9,10 +9,15 @@ do
 	echo "Processing $file file..."
 	#get name after last '/' in path and prepend a '.' 
 	DOTFILE=.${file##*/} 
-	echo "Dotfile is: $DOTFILE"
-	
-	#if file doesn't exist
-	#{
-	#	symlink $file to ~/.$file
-	#}
+	#if file exists
+	if [ -f $HOME/$DOTFILE ]; then 
+		echo "$DOTFILE already exists in $HOME"
+		read -r -p "Overwrite? [y/N] " yn
+		case $yn in
+			[Yy]* ) ln -sf $file $HOME/$DOTFILE; continue;; 
+			[Nn]* ) continue;;
+			* ) echo "Please enter yes or no.";;
+		esac
+	fi
 done 
+
