@@ -10,7 +10,8 @@ fi
 # User specific aliases and functions
 alias l="ls -la"
 alias ls="ls --color=auto"
-alias dir="ls"	#because why not? 
+alias sl="ls"
+alias dir="ls"	
 alias grep="grep --color=always" #colors matched string
 alias hidden="ls -a | grep '^\.'"
 
