@@ -5,8 +5,9 @@ for file in $FILES
 do
 	if [ "$file" == "expand_files.sh" ]; then
 		continue; 
+	else
+		echo "Processing $file file..."
 	fi
-	echo "Processing $file file..."
 	#get name after last '/' in path and prepend a '.' 
 	DOTFILE=.${file##*/} 
 	#if file exists
