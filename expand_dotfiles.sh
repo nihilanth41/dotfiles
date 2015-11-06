@@ -11,7 +11,7 @@ do
 	fi
 	#get name after last '/' in path and prepend a '.' 
 	DOTFILE=.${file##*/} 
-	#if file exists
+	#if file exists prompt for overwrite
 	if [ -f $HOME/$DOTFILE ]; then 
 		echo "$DOTFILE already exists in $HOME"
 		read -r -p "Overwrite? [y/N] " yn
@@ -20,6 +20,8 @@ do
 			[Nn]* ) continue;;
 			* ) echo "Please enter yes or no.";;
 		esac
+	else
+		ln -sf "$file" "$HOME/$DOTFILE"
 	fi
 done 
 
