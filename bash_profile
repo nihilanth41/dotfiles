@@ -11,6 +11,6 @@ fi
 PATH=$PATH:$HOME/bin
 export PATH
 
-EDITOR=vim 
+EDITOR=/usr/bin/vim 
 export EDITOR 
 
