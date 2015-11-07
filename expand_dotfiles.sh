@@ -1,4 +1,4 @@
-#!/bin/env bash 
+#!/usr/bin/env bash 
 # Install dotfiles onto new system 
 
 FILES=$HOME/dotfiles/*
