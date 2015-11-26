@@ -9,6 +9,8 @@ fi
 
 
 PATH=$PATH:$HOME/bin
+# For raspi:
+PATH=$PATH:/opt/vc/bin
 export PATH
 
 EDITOR=/usr/bin/vim 
