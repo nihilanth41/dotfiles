@@ -133,5 +133,6 @@ xnoremap & :&&<CR>
 " Make Y consistent with C and D.  See :help Y.
 nnoremap Y y$
 set background=dark
-colors vividchalk 
+" colors vividchalk 
+colorscheme solarized 
 " vim:set ft=vim et sw=2:

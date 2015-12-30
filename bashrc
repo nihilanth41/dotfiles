@@ -9,6 +9,7 @@ fi
 
 # User specific aliases and functions
 alias l="ls -la"
+alias ll="l"
 alias ls="ls --color=auto"
 alias sl="ls" 
 alias dir="ls"	
