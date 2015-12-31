@@ -16,7 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-vividchalk'
+"Plugin 'tpope/vim-vividchalk'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -28,6 +28,10 @@ Plugin 'tpope/vim-vividchalk'
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
+
+" Colorschemes 
+Plugin 'tpope/vim-vividchalk'
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -129,7 +133,14 @@ nnoremap & :&&<CR>
 xnoremap & :&&<CR>
 " Make Y consistent with C and D.  See :help Y.
 nnoremap Y y$
-set background=dark
-" colors vividchalk 
-colorscheme solarized 
+
+" Solarized 
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
+colors solarized 
+
 " vim:set ft=vim et sw=2:
+
