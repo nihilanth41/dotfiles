@@ -29,6 +29,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
 
+Plugin 'vim-perl/vim-perl'
+
 " Colorschemes 
 Plugin 'tpope/vim-vividchalk'
 Plugin 'altercation/vim-colors-solarized'
@@ -141,6 +143,8 @@ else
   set background=dark
 endif
 colors solarized 
+
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " vim:set ft=vim et sw=2:
 
