@@ -1,4 +1,4 @@
-" sensible.vim - Defaults everyone can agree on
+"sensible.vim - Defaults everyone can agree on
 " Maintainer:   Tim Pope <http://tpo.pe/>
 " Version:      1.0
 
@@ -30,6 +30,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'user/L9', {'name': 'newL9'}
 
 Plugin 'vim-perl/vim-perl'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " Colorschemes 
 Plugin 'tpope/vim-vividchalk'
@@ -147,6 +148,11 @@ colors solarized
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 autocmd FileType ruby map <F9> :w<CR>:!ruby -c %<CR>
+
+" For ctrlp
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 " vim:set ft=vim et sw=2:
 
