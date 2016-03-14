@@ -5,6 +5,7 @@
 	default = simple
 [alias]
 	st = status 
+	br = branch -a 
 
 
 
