@@ -14,8 +14,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" 
-Plugin 'vim-perl/vim-perl'
 Plugin 'ctrlpvim/ctrlp.vim'
 
 " Colorschemes 
@@ -51,12 +49,13 @@ if has('syntax') && !exists('g:syntax_on')
 endif
 
 " Use :help 'option' to see the documentation for the given option.
-set number                             " Line numbers 
-set autoindent                         " 
-set backspace=indent,eol,start
-set complete-=i
-set showmatch
-set smarttab
+set number                              " Line numbers 
+set autoindent                          " Get indent level from current line 
+set backspace=indent,eol,start          " Make backspace key work over line breaks, indentation
+set complete-=i                         " Don't search included files for autocompletion words (tends to search system libraries e.g. stdlib) 
+set showmatch                           " When inserting a closing bracket move the cursor to previous matching bracket for fraction of a second
+set matchtime=10                        " Showmatch time where n is in 10ths of a second 
+set smarttab                            " 
 
 set nrformats-=octal
 set shiftround
