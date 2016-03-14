@@ -13,22 +13,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-"Plugin 'tpope/vim-vividchalk'
-" plugin from http://vim-scripts.org/vim/scripts.html
-"Plugin 'L9'
-" Git plugin not hosted on GitHub
-"Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-"Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Avoid a name conflict with L9
-"Plugin 'user/L9', {'name': 'newL9'}
 
+" 
 Plugin 'vim-perl/vim-perl'
 Plugin 'ctrlpvim/ctrlp.vim'
 
@@ -65,8 +51,8 @@ if has('syntax') && !exists('g:syntax_on')
 endif
 
 " Use :help 'option' to see the documentation for the given option.
-set number
-set autoindent
+set number                             " Line numbers 
+set autoindent                         " 
 set backspace=indent,eol,start
 set complete-=i
 set showmatch
@@ -147,13 +133,14 @@ colors solarized
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-autocmd FileType ruby map <F9> :w<CR>:!ruby -c %<CR>
+:nnoremap <F5> :buffers<CR>:buffer<Space> 
 
 " For ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+" Use silversearcher-ag if present 
 if executable('ag')
   " Use ag over grep 
   set grepprg=ag\ --nogroup\ --nocolor
