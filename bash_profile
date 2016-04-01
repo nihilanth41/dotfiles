@@ -6,13 +6,6 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-
-
-PATH=$PATH:$HOME/bin
-# For raspi:
-PATH=$PATH:/opt/vc/bin
-export PATH
-
-EDITOR=/usr/bin/vim 
-export EDITOR 
+export EDITOR=/usr/bin/vim 
+export PATH=$PATH:$HOME/bin
 
