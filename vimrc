@@ -99,12 +99,14 @@ xnoremap & :&&<CR>
 nnoremap Y y$
 
 " Solarized 
-if has('gui_running')
-  set background=light
-else
-  set background=dark
-endif
-colors vividchalk 
+"if has('gui_running')
+"  set background=light
+"else
+"  set background=dark
+"endif
+"colors solarized 
+set background=dark
+colors vividchalk
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
