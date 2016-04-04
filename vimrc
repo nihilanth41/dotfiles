@@ -104,7 +104,7 @@ if has('gui_running')
 else
   set background=dark
 endif
-colors solarized 
+colors vividchalk 
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
