@@ -5,8 +5,6 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# User specific prompt
-
 # User specific aliases and functions
 alias l="ls -la"
 alias ll="l"

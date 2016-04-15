@@ -125,5 +125,8 @@ if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
+" Associate .tpl w/ smarty 
+au BufRead,BufNewFile *.tpl set filetype=smarty
+
 " vim:set ft=vim et sw=2:
 

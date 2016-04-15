@@ -1,0 +1,5 @@
+Host darklib
+	User zrrm74
+	Hostname dark.lib.umsystem.edu
+	port 22
+	IdentityFile ~/.ssh/id_rsa
