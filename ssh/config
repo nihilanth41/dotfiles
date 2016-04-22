@@ -3,3 +3,9 @@ Host darklib
 	Hostname dark.lib.umsystem.edu
 	port 22
 	IdentityFile ~/.ssh/id_rsa
+
+Host dora 
+	User zrrm74
+	Hostname dora.lib.missouri.edu
+	port 22
+	IdentityFile ~/.ssh/id_rsa
