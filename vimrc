@@ -26,6 +26,7 @@ endif
 
 " Use :help 'option' to see the documentation for the given option.
 set number                              " Line numbers 
+set relativenumber
 set autoindent                          " Get indent level from current line 
 set backspace=indent,eol,start          " Make backspace key work over line breaks, indentation
 set complete-=i                         " Don't search included files for autocompletion words (tends to search system libraries e.g. stdlib) 
@@ -40,6 +41,7 @@ set ttimeout
 set ttimeoutlen=50
 
 set incsearch
+set hlsearch
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<CR><C-L>

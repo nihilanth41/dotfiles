@@ -14,6 +14,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-vividchalk'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-scripts/smarty-syntax'
+Plugin 'tomtom/tcomment_vim'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
 	source ~/.vimrc.bundles.local
