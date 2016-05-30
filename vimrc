@@ -37,19 +37,19 @@ set smarttab                            "
 set nrformats-=octal
 set shiftround
 
-set ttimeout
+set ttimeout                            
 set ttimeoutlen=50
 
-set incsearch
-set hlsearch
+set incsearch                           " Start searching when the first character is entered
+set hlsearch                            " Search highlighting
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 endif
 
 set laststatus=2
-set ruler
-set showcmd
+set ruler                               " Display status line (filename, row, column)
+set showcmd                             
 set wildmenu
 
 if !&scrolloff
@@ -158,6 +158,10 @@ endif
 nnoremap ,v <C-w>v
 nnoremap ,h <C-w>h
 nnoremap ,, <C-w>w
+nnoremap ,c <C-w>c
+
+"
+"inoremap <C-s> <c-o>:Update<CR><CR>
 
 " vim:set ft=vim et sw=2:
 
