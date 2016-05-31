@@ -1,4 +1,6 @@
 "sensible.vim - Defaults everyone can agree on
+
+
 " Maintainer:   Tim Pope <http://tpo.pe/>
 " Version:      1.0
 
@@ -156,12 +158,17 @@ else
 endif
 
 nnoremap ,v <C-w>v
-nnoremap ,h <C-w>h
+nnoremap ,h <C-w>s
 nnoremap ,, <C-w>w
 nnoremap ,c <C-w>c
 
-"
-"inoremap <C-s> <c-o>:Update<CR><CR>
+nnoremap <silent> <C-s> :<C-u>update<CR>
+
+map ; :
+noremap ;; ;
+
+" Allow saving of files with sudo if/when vim is run without sudo 
+cmap w!! w !sudo tee > /dev/null %
 
 " vim:set ft=vim et sw=2:
 
