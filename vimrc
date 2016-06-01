@@ -1,6 +1,5 @@
 "sensible.vim - Defaults everyone can agree on
 
-
 " Maintainer:   Tim Pope <http://tpo.pe/>
 " Version:      1.0
 
@@ -131,6 +130,13 @@ endif
 
 " Associate .tpl w/ smarty 
 au BufRead,BufNewFile *.tpl set filetype=smarty
+
+" Unbind the cursor keys in insert, normal and visual modes.
+for prefix in ['i', 'n', 'v']
+  for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+    exe prefix . "noremap " . key . " <Nop>"
+  endfor
+endfor
 
 if exists('$TMUX')
   function! TmuxOrSplitSwitch(wincmd, tmuxdir)
