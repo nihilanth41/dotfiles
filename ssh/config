@@ -1,11 +1,23 @@
+Host github
+	User git
+	Hostname github.com
+	Port 22
+	IdentityFile ~/.ssh/id_rsa
+
+Host mvcs 
+	User git
+	Hostname vcs.missouri.edu
+	Port 22
+	IdentityFile ~/.ssh/id_rsa
+
 Host darklib
 	User zrrm74
 	Hostname dark.lib.umsystem.edu
-	port 22
+	Port 22
 	IdentityFile ~/.ssh/id_rsa
 
 Host dora 
 	User zrrm74
 	Hostname dora.lib.missouri.edu
-	port 22
+	Port 22
 	IdentityFile ~/.ssh/id_rsa
