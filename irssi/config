@@ -1,0 +1,33 @@
+servers = (
+  {
+    address = "chat.freenode.net";
+    chatnet = "freenode";
+    port = "6697";
+    use_ssl = "yes";
+    ssl_verify = "yes";
+    ssl_capath = "/etc/ssl/certs";
+    autoconnect = "yes";
+  }
+);
+
+chatnets = {
+  freenode = {
+    type = "IRC";
+    nick = "zrr";
+    autosendcmd = "/msg nickserv identify <PASSWORD>";
+    max_kicks = "1";
+    max_msgs = "4";
+    max_whois = "1";
+  };
+};
+
+channels = (
+  { name = "#vim"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#git"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "##programming"; chatnet = "freenode"; autojoin = "yes"; }
+);
+
+settings = {
+  core = { real_name = "Zach"; user_name = "zrr"; nick = "zrr"; };
+  "fe-text" = { actlist_sort = "refnum"; };
+};
