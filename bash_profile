@@ -7,5 +7,4 @@ fi
 
 # User specific environment and startup programs
 export EDITOR=/usr/bin/vim 
-export PATH=$PATH:$HOME/bin
-
+export PATH="$HOME/bin:$HOME/local/bin:$PATH"
