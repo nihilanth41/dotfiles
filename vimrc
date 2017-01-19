@@ -176,5 +176,9 @@ noremap ;; ;
 " Allow saving of files with sudo if/when vim is run without sudo 
 cmap w!! w !sudo tee > /dev/null %
 
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
+
 " vim:set ft=vim et sw=2:
 
