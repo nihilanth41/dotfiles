@@ -10,9 +10,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Define bundles via Github repos
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-vividchalk'
-Plugin 'vim-scripts/smarty-syntax'
+"Plugin 'vim-scripts/smarty-syntax'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
 	source ~/.vimrc.bundles.local

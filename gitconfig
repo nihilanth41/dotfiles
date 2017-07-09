@@ -1,13 +1,10 @@
-[user]
-	email = zrrm74@mail.missouri.edu
-	name = Zachary Rump
 [push]
 	default = simple
 [alias]
 	st = status 
 	br = branch -a 
 	re = remote -v
-	diff = diff --staged
+	di = diff --staged
 
 
 
