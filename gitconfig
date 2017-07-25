@@ -5,6 +5,6 @@
 	br = branch -a 
 	re = remote -v
 	di = diff --staged
-
-
-
+[user]
+	email = zrrm74@mail.mizzou.edu
+	name = Zachary Rump

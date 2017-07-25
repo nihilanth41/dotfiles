@@ -3,3 +3,9 @@ Host github
 	Hostname github.com
 	Port 22
 	IdentityFile ~/.ssh/id_rsa
+
+Host mvcs 
+	User git
+	Hostname vcs.missouri.edu
+	Port 22
+	IdentityFile ~/.ssh/id_rsa
