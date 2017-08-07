@@ -148,5 +148,9 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
+if filereadable(expand("~/.vimrc.spelling"))
+  source ~/.vimrc.spelling
+endif
+
 " vim:set ft=vim et sw=2:
 
