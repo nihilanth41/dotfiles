@@ -6,6 +6,6 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-export EDITOR=/usr/bin/vim 
+export EDITOR=vim
 export PATH="$HOME/bin:$HOME/local/bin:$PATH"
 export MANPATH=$HOME/man:$MANPATH

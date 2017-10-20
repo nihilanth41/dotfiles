@@ -55,3 +55,5 @@ cd ..
 rm -rf $HOME/tmux_tmp
 
 echo "$HOME/local/bin/tmux is now available. You can optionally add $HOME/local/bin to your PATH."
+
+#LDFLAGS=-L/nfs-home/zrrm74/local/lib ./configure --prefix=/nfs-home/zrrm74/local
