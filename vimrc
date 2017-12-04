@@ -148,8 +148,8 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
-if filereadable(expand("~/.vimrc.spelling"))
-  source ~/.vimrc.spelling
+if filereadable(expand("~/.vim/autocorrect.dat"))
+  source ~/.vim/autocorrect.dat
 endif
 
 " vim:set ft=vim et sw=2:
