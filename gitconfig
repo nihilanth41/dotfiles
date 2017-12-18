@@ -5,6 +5,7 @@
 	br = branch -a 
 	re = remote -v
 	di = diff --staged
+	logk = log --all --decorate --oneline --graph
 [user]
-	email = zrrm74@mail.mizzou.edu
 	name = Zachary Rump
+	email = zrrm74@mail.missouri.edu
