@@ -34,6 +34,10 @@ set complete-=i                         " Don't search included files for autoco
 set showmatch                           " When inserting a closing bracket move the cursor to previous matching bracket for fraction of a second
 set matchtime=10                        " Showmatch time where n is in 10ths of a second 
 set smarttab                            " 
+set softtabstop=4
+set shiftwidth=4
+set tabstop=4
+set expandtab
 
 set nrformats-=octal
 set shiftround
